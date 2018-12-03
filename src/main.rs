@@ -1,5 +1,6 @@
 extern crate elapsed;
-#[macro_use] extern crate itertools;
+extern crate strsim;
+extern crate itertools;
 
 mod utils;
 mod day1;
