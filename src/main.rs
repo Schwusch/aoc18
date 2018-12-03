@@ -1,13 +1,16 @@
 extern crate elapsed;
+#[macro_use] extern crate itertools;
 
 mod utils;
 mod day1;
+mod day2;
 
 use elapsed::measure_time;
 use self::day1::*;
+use self::day2::*;
 
 fn main() {
-    vec![day1].iter().for_each(|f| {
+    [day1, day2].iter().for_each(|f| {
         let (elapsed, _) = measure_time(f);
         println!("It took {}\n", elapsed)
     });

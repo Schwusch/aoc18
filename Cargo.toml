@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 elapsed = "0.1"
+itertools = "0.7"
